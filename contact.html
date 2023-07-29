@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Impex Clothing Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-links">
+        <p><a href="./index.html" >Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html" class="active">Contact</a></p>
+      </div>
+
+      <!-- Account Section -->
+      <div class="navbar-account">
+        <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
+        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
+      </div>
+
+      <!-- For responsive Navbar -->
+
+      <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+
+      <div class="side-menu">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html"  class="active">Contact</a></p>
+        <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+      </div>
+    </div>
+
+<!-- Contact Section -->
+<div class="contact">
+    
+
+    <div class="contact-form ">
+
+        <div class="message-form">
+          <div class="contact-title">
+            <h1>Contact Us</h1>
+            <p>Our friendly team would love to hear from you!</p>
+        </div>
+            <form action="" id="contact-us">
+                <input type="text" name="fullname" id="name" placeholder="Your Full Name">
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-map">
+          <img src="./assets/pexels-mart-production-7679877.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- More Info -->
+<div class="contact-more-info">
+  <div class="email-info">
+    <h3><i class="fa-solid fa-envelope"></i>Email us</h3>
+    <p>Speak to our Friendly Team</p>
+
+    <span><a href="mailto:/rajinsakha07@gmail.com">rajinsakha07@gmail.com</a></span>
+  </div>
+
+  <div class="location-info">
+    <h3><i class="fa-solid fa-map"></i>Visit us</h3>
+    <p>Visit our Office HQ.</p>
+    <span>Tinkune, Kathmandu, Nepal</span>
+  </div>
+
+  <div class="phone-info">
+    <h3><i class="fa-solid fa-phone"></i>Call us</h3>
+    <p>Mon-Fri from 8 A.M to 6 P.M. </p>
+    <span>+977-9761626067</span>
+  </div>
+</div>
+   
+
+</div>
+
+
+
+  <!-- Footer Section -->
+  <div class="footer section-padding">
+    <div class="footer-links">
+      <div class="footer-links_logo">
+        <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
+        <p>Kathmandu, Nepal, All Rights Reserved</p>
+      </div>
+      <div class="footer-links_div">
+        <h4><a href="./products.html">SHOP</a></h4>
+        <p><a href="./shirts.html">Shirts</a></p>
+        <p><a href="./pants.html">Pants</a></p>
+        <p><a href="./shoes.html">Shoes</a></p>
+      </div>
+
+      <div class="footer-links_div">
+        <h4>CUSTOMER SERVICE</h4>
+        <p>About Us</p>
+        <p>Privacy Policies</p>
+        <p>Contact</p>
+      </div>
+
+      <div class="footer-links_div">
+        <h4>Get in Touch</h4>
+        <p>Kathmandu, Nepal</p>
+        <p>+977-9761626067</p>
+        <p>rajinsakha07@gmail.com</p>
+      </div>
+
+      <div class="footer-payment_info">
+        <img src="./assets/pay.png" alt="payment" />
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2023 Impex Clothing Store. All rights reserved.</p>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="app.js"></script>
+    </body>
+</html>

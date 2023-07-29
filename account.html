@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About US | Impex Clothing Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="account.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-links">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+      </div>
+
+      <!-- Account Section -->
+      <div class="navbar-account">
+        <p>
+          <a href="./account.html" class="active"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </p>
+        <p>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </p>
+      </div>
+
+      <!-- For responsive Navbar -->
+
+      <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+
+      <div class="side-menu">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+        <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+      </div>
+    </div>
+
+<!-- Account Section -->
+<div class="account">
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer section-padding">
+    <div class="footer-links">
+      <div class="footer-links_logo">
+        <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
+        <p>Kathmandu, Nepal, All Rights Reserved</p>
+      </div>
+      <div class="footer-links_div">
+        <h4><a href="./products.html">SHOP</a></h4>
+        <p><a href="./shirts.html">Shirts</a></p>
+        <p><a href="./pants.html">Pants</a></p>
+        <p><a href="./shoes.html">Shoes</a></p>
+      </div>
+
+      <div class="footer-links_div">
+        <h4>CUSTOMER SERVICE</h4>
+        <p>About Us</p>
+        <p>Privacy Policies</p>
+        <p>Contact</p>
+      </div>
+
+      <div class="footer-links_div">
+        <h4>Get in Touch</h4>
+        <p>Kathmandu, Nepal</p>
+        <p>+977-9761626067</p>
+        <p>rajinsakha07@gmail.com</p>
+      </div>
+
+      <div class="footer-payment_info">
+        <img src="./assets/pay.png" alt="payment" />
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2023 Impex Clothing Store. All rights reserved.</p>
+    </div>
+  </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

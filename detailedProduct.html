@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Description</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-links">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+      </div>
+
+      <!-- Account Section -->
+      <div class="navbar-account">
+        <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
+        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
+      </div>
+
+      <!-- For responsive Navbar -->
+
+      <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+
+      <div class="side-menu">
+        <p><a href="./index.html">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+        <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+      </div>
+    </div>
+
+    <!-- Product Description -->
+    <div class="detailedProduct">
+      <div class="detailedProduct-image">
+        <div class="image-list">
+          <img
+            src="./assets/flight-grey.jpg"
+            alt="jordan-main"
+            class="image-link active-image"
+          />
+          <img src="./assets/jordan-grey2.jpg" alt="jordan-grey2" class="image-link" />
+          <img src="./assets/jordan-greyBack.jpg" alt="jordan-greyBack" class="image-link" />
+          <img src="./assets/jordan-grey3.jpg" alt="jordan-grey3" class="image-link" />
+        </div>
+
+        <div class="main-image">
+          <img
+            src="./assets/flight-grey.jpg"
+            alt="jordan-main"
+            class="main-image-link active-main-image"
+            id="product-image"
+          />
+          <img src="./assets/jordan-grey2.jpg" alt="jordan-grey2" class="main-image-link" />
+          <img
+            src="./assets/jordan-greyBack.jpg"
+            alt=""
+            class="main-image-link"
+          />
+          <img src="./assets/jordan-grey3.jpg" alt="jordan-grey3" class="main-image-link" />
+        </div>
+      </div>
+
+      <div class="detailedProduct-desc">
+        <h2 class="product-name">Nike Air Jordan 4 Flight Edition</h2>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h4 class="product-price">RS 7000.00</h4>
+      
+        <div class="line"></div>
+
+        <div class="detailedProduct-desc_info">
+          <p>
+            Elevate your casual style with this Nike Jordan 4 shoes. These shoes
+            are the perfect essential for your wardrobe, offering both comfort
+            and versatility. Made from high-quality and durable fabric, they
+            provide a soft and cozy feel, keeping you warm in colder weather.
+            The plain design adds a minimalist touch, making them easy to pair
+            with any outfit.
+          </p>
+        </div>
+
+        <div class="detailedProduct-btns">
+          <button class="buy-btn" type="button">Buy Now</button>
+          <button class="addCart-btn" type="button">Add to Cart</button>
+        </div>
+
+        <div class="more-info">
+          <h3>
+            Size: <span>39, 40, 41, 42, 43</span>
+            <h3>Category: <span>Shoes</span></h3>
+            <h3>Tags: <span>nike shoes, jordan shoes</span></h3>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended Products Section -->
+    <div class="recommended-products">
+      <div class="recommended-products-title">
+        <h1>Recommended Products</h1>
+      </div>
+
+      <div class="products-wrapper">
+        <i id="left" class="fa-solid fa-angle-left change"></i>
+        <div class="product-slider">
+          <!-- First Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/j1.png"
+                alt="jordan-skyblue"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHOES</h3>
+              <h4>Nike Air Jordan SkyBlue</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 7000</p>
+            </div>
+          </div>
+
+          <!-- Second Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/nike-jordan.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+
+          <!-- Third Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/jordan-low.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+
+          <!-- Fourth Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/jordan-yellow.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+
+          <!-- Fifth Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/fresh-white-shoe.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+
+          <!-- Sixth Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/white-sport-shoe.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+
+          <!-- Seventh Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/jordan-1.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+
+          <!-- Eigth Product -->
+          <div class="product-card">
+            <div class="card-image">
+              <img
+                src="./assets/flight-grey.jpg"
+                alt="cream-shirt"
+                draggable="false"
+              />
+            </div>
+            <div class="card-content">
+              <h3>SHIRTS</h3>
+              <h4>Cream Cotton Shirt</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Rs 1800</p>
+            </div>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right change"></i>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer section-padding">
+      <div class="footer-links">
+        <div class="footer-links_logo">
+          <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
+          <p>Kathmandu, Nepal, All Rights Reserved</p>
+        </div>
+        <div class="footer-links_div">
+          <h4><a href="./products.html">SHOP</a></h4>
+          <p><a href="./shirts.html">Shirts</a></p>
+          <p><a href="./pants.html">Pants</a></p>
+          <p><a href="./shoes.html">Shoes</a></p>
+        </div>
+
+        <div class="footer-links_div">
+          <h4>CUSTOMER SERVICE</h4>
+          <p>About Us</p>
+          <p>Privacy Policies</p>
+          <p>Contact</p>
+        </div>
+
+        <div class="footer-links_div">
+          <h4>Get in Touch</h4>
+          <p>Kathmandu, Nepal</p>
+          <p>+977-9761626067</p>
+          <p>rajinsakha07@gmail.com</p>
+        </div>
+
+        <div class="footer-payment_info">
+          <img src="./assets/pay.png" alt="payment" />
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2023 Impex Clothing Store. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="product.js"></script>
+   
+   
+    <script src="imageSlider.js" defer></script>
+  </body>
+</html>
