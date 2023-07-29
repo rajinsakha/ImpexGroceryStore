@@ -1,7 +1,9 @@
 window.addEventListener("DOMContentLoaded", () => {
+  const cartInfo = document.querySelector('.cart-info')
   const cartItemsContainer = document.querySelector(".cart-items-container");
   const itemNum = document.getElementById("itemNum");
   let totalPrice = document.getElementById("totalPrice");
+  const noItems = document.querySelector('.noItems');
 
   let cartProductData = JSON.parse(localStorage.getItem("cartProductData"));
   let price = 0;
@@ -24,13 +26,11 @@ window.addEventListener("DOMContentLoaded", () => {
   itemNum.textContent = `ITEMS: ${totalItems}`;
 
   if (cartProductData.length <= 0) {
-    const noItems = document.createElement("h1");
-    noItems.classList.add("no-items");
-    noItems.textContent = "There are no items in the cart.";
-    cartItemsContainer.appendChild(noItems);
-    itemNum.textContent = `ITEMS: 0`;
-  } else {
+    cartInfo.style.display = "none";
+  }
+   else {
     for (let i = 0; i < cartProductData.length; i++) {
+      noItems.style.display= "none";
       const cartItemDiv = document.createElement("div");
       cartItemDiv.classList.add("cart-div");
       cartItemDiv.setAttribute("id", `${cartProductData[i].index}`);
@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
       cartItemImage.classList.add("cart-image");
 
       const deleteBtn = document.createElement("button");
-      deleteBtn.textContent = "Delete";
+      deleteBtn.textContent = "x";
       deleteBtn.classList.add("delete-btn");
 
       deleteBtn.addEventListener("click", () => {
@@ -74,6 +74,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     let totalAmt = calculatePrice(cartProductData);
-    totalPrice.textContent = `Total Price: ${totalAmt}`;
+    totalPrice.textContent = `Total Price: Rs ${totalAmt}`;
   }
 });

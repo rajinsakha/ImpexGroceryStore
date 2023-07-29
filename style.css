@@ -119,6 +119,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  
 }
 
 .header-content h1 {
@@ -132,6 +133,8 @@ a {
   font-size: 20px;
   line-height: 27px;
   margin-top: 1.5rem;
+  text-align: justify;
+  padding-right: 4rem;
 }
 
 .header-content button {
@@ -146,6 +149,10 @@ a {
   cursor: pointer;
 }
 
+.header-content button:hover{
+  background-color: #ff9036;
+}
+
 .header-image {
   flex: 1;
   display: flex;
@@ -156,6 +163,11 @@ a {
 .header-image img {
   width: 100%;
   height: 100%;
+}
+
+#right-arrow{
+  font-size: 1.1rem;
+  margin-left: 6px;
 }
 
 /* Product Section */
@@ -297,6 +309,67 @@ a {
   line-height: 22px;
   font-weight: 400;
 }
+
+/* NewsLetter Section */
+.newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #e9eaec;
+  margin-bottom: 6rem;
+}
+
+.newsletter-content{
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-content h4{
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-content p{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(45, 44, 44);
+}
+
+.email-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-form input{
+  height: 2.5rem;
+  padding-left: 2em;
+  padding-right: 6em;
+  font-size: 0.9rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline: none; 
+ }
+
+.email-form button{
+  height: 2.5rem;
+  padding: 0 1em;
+  background-color: #f47c1c;
+  color:white;
+  border: 1px solid transparent;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
 
 /* Footer Section */
 .footer {
@@ -1054,6 +1127,10 @@ a {
     margin: 0 0 3rem;
   }
 
+  .header-content p {
+    padding-right: 0rem;
+  }
+
   .product-category {
     display: none;
   }
@@ -1129,6 +1206,8 @@ a {
     grid-gap: 2rem;
   }
 
+
+
 }
 
 @media screen and (max-width: 750px) {
@@ -1177,6 +1256,7 @@ a {
     grid-gap: 2rem;
   }
 
+ 
 
   
 }
@@ -1240,5 +1320,6 @@ a {
     padding-right: 0rem;
   }
 
+  
   
 }
