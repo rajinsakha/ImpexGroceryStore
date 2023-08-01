@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Impex Clothing Store</title>
+    <title>Admin Login</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adminlogin.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -23,16 +24,22 @@
 
       <!-- Links -->
       <div class="navbar-links">
-        <p><a href="./index.html" >Home</a></p>
+        <p><a href="./index.html">Home</a></p>
         <p><a href="./products.html">Products</a></p>
-        <p><a href="./about.html">About</a></p>
-        <p><a href="./contact.html" class="active">Contact</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
       </div>
 
       <!-- Account Section -->
       <div class="navbar-account">
-        <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
-        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
+        <p>
+          <a href="./account.html" class="active"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </p>
+        <p>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </p>
       </div>
 
       <!-- For responsive Navbar -->
@@ -43,64 +50,27 @@
         <p><a href="./index.html">Home</a></p>
         <p><a href="./products.html">Products</a></p>
         <p><a href="./about.html">About</a></p>
-        <p><a href="./contact.html"  class="active">Contact</a></p>
+        <p><a href="./contact.html">Contact</a></p>
         <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
       </div>
     </div>
 
-<!-- Contact Section -->
-<div class="contact">
-    
-
-    <div class="contact-form ">
-
-        <div class="message-form">
-          <div class="contact-title">
-            <h1>Contact Us</h1>
-            <p>Our friendly team would love to hear from you!</p>
-        </div>
-            <form action="" id="contact-us">
-                <input type="text" name="fullname" id="name" placeholder="Your Full Name">
-                <input type="email" name="email" id="email" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
-        <div class="contact-map">
-          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Raja%20Janak%20Marg,%20Tinkune,%20Bhaktapur+(Mega%20Grocery%20Store)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Find Population on Map</a></iframe></div>
-      </div>
-    </div>
-
-    <!-- More Info -->
-<div class="contact-more-info">
-  <div class="email-info">
-    <h3><i class="fa-solid fa-envelope"></i>Email us</h3>
-    <p>Speak to our Friendly Team</p>
-
-    <span><a href="mailto:/rajinsakha07@gmail.com">rajinsakha07@gmail.com</a></span>
-  </div>
-
-  <div class="location-info">
-    <h3><i class="fa-solid fa-map"></i>Visit us</h3>
-    <p>Visit our Office HQ.</p>
-    <span>Tinkune, Kathmandu, Nepal</span>
-  </div>
-
-  <div class="phone-info">
-    <h3><i class="fa-solid fa-phone"></i>Call us</h3>
-    <p>Mon-Fri from 8 A.M to 6 P.M. </p>
-    <span>+977-9761626067</span>
-  </div>
-</div>
-   
-
+<!-- Account Section -->
+<div class="account">
+    <div class="main">  	
+			<!-- <div class="login"> -->
+				<form>
+					<label>Admin Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			<!-- </div> -->
+	</div>
 </div>
 
-
-
-  <!-- Footer Section -->
-  <div class="footer section-padding">
+<!-- Footer Section -->
+<div class="footer section-padding">
     <div class="footer-links">
       <div class="footer-links_logo">
         <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
@@ -136,10 +106,6 @@
     </div>
   </div>
 
-
-
-
-
-  <script src="app.js"></script>
-    </body>
+    <script src="app.js"></script>
+  </body>
 </html>

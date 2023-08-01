@@ -137,19 +137,22 @@ a {
   padding-right: 4rem;
 }
 
-.header-content button {
+.explore-button{
+  margin-top: 1.5rem;
+}
+
+.explore-button a {
   background-color: #f47c1c;
   color: #fff;
   border: none;
   border-radius: 8px;
   min-height: 40px;
   font-size: 1.1rem;
-  padding: 0 1rem;
-  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
-.header-content button:hover{
+.explore-button a:hover{
   background-color: #ff9036;
 }
 
@@ -860,7 +863,6 @@ a {
   flex-direction: row;
   padding: 1rem;
   margin-bottom: 3rem;
- 
 }
 
 .our-vision-desc, .our-approach-desc, .our-process-desc{
@@ -903,6 +905,44 @@ a {
   width: 100%;
   height: 100%;
 }
+
+
+/* Terms and Conditions Section */
+.terms{
+  margin: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.terms h1{
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.conditions h3{
+  margin-bottom: 0.6rem;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.condition{
+  text-align: justify;
+}
+
+.condition h4{
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.condition span{
+  font-weight: 400;
+}
+
 
 /* Contact Section */
 .contact{

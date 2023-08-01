@@ -1,0 +1,88 @@
+.thank-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.thank-section-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-color: #F47C1C;
+    margin-bottom: 1rem;
+}
+
+.thank-image{
+  width: 150px;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.thank-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.thank-section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-section-content h2{
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.payment-msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem;
+
+}
+
+.payment-icon{
+    background-color: #F47C1C;
+    padding: 0.2rem 0.4rem;
+    border-radius: 50%;
+}
+
+.payment-icon i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.payment-msg p{
+    font-size: 1.4rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.7rem;
+    font-weight: 600;
+}
+
+.thank-section-content span{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-button{
+    margin-top: 1rem;
+}
+
+.home-button a{
+    background-color: #F47C1C;
+    border: none;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home-button a:hover{
+    background-color: #ff9036;
+}
+

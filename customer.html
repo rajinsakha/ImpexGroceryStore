@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="customer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ 
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
+      </div>
+
+      <!-- Links -->
+      <div class="navbar-links">
+        <p><a href="#" >Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+      </div>
+
+      <!-- Account Section -->
+      <div class="navbar-account">
+        <p><a href="./account.html" class="active"><i class="fa-solid fa-user"></i></a></p>
+        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
+      </div>
+
+      <!-- For responsive Navbar -->
+
+      <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+
+      <div class="side-menu">
+        <p><a href="./index.html" class="active">Home</a></p>
+        <p><a href="./products.html">Products</a></p>
+        <p><a href="./about.html">About</a></p>
+        <p><a href="./contact.html">Contact</a></p>
+        <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+      </div>
+    </div>
+
+    <!--Logged in Customer's Profile Zone -->
+    <div class="profile">
+      
+      <!-- <div class="profile-category">
+        <h4>Home</h4>
+        <h4>Orderer Product's List</h4>
+        <h4>Purchased History</h4>
+        <h4>Setting</h4>
+      </div> -->
+
+      <div class="welcome-section">
+
+        <div class="welcome-header">
+          <h1>Welcome Rajin Sakha</h1>
+        </div>
+
+        <div class="sales-section">
+          <div class="sale-detail">
+            <div class="sales-section-content">
+              <h3>Total Sale</h3>
+              <p>Rs 1000</p>
+              <span>37% Last Week</span>
+            </div>
+             
+              <div class="sales-section-image">
+                <i class="fa-solid fa-money-bill" id="money"></i>
+              </div>
+          </div>
+
+          <div class="visitor-detail">
+            <div class="sales-section-content">
+              <h3>Visitors</h3>
+              <p>6547</p>
+              <span>27% Last Week</span>
+            </div>
+           
+
+            <div class="sales-section-image">
+              <i class="fa-solid fa-people-group" id="visitors"></i>
+            </div>
+          </div>
+
+          <div class="neworder-detail">
+            <div class="sales-section-content">
+              <h3>New Orders</h3>
+            <p>1523</p>
+            <span>17% Last Week</span>
+            </div>
+
+            <div class="sales-section-image">
+              <i class="fa-solid fa-boxes-stacked" id="order"></i>
+            </div>
+
+          </div>
+
+          <div class="customer-detail">
+            <div class="sales-section-content">
+              <h3>Customers</h3>
+              <p>2310</p>
+              <span>14% Last Week</span>
+            </div>
+
+            <div class="sales-section-image">
+              <i class="fa-solid fa-user-group" id="customers"></i>
+            </div>
+
+
+         
+          </div>
+        </div>
+      
+
+        <!-- Recent Order List -->
+        <div class="order-list">
+       
+       
+          <div class="cart-info">
+        
+            <!-- Items Info Table -->
+            <div class="cart-items-container">
+              <h2>Recent Orders</h2>
+              <div class="noItems">
+                <h4>No Recent Orders Found.</h4></div>
+            </div>
+
+            <div class="purchase-items-container">
+              <h2>Purchase History</h2>
+              <h4>No Purchase History Found.</h4>
+            </div>
+
+            
+
+
+        
+          </div>
+        </div>
+
+   
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer section-padding">
+      <div class="footer-links">
+        <div class="footer-links_logo">
+          <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
+          <p>Kathmandu, Nepal, All Rights Reserved</p>
+        </div>
+        <div class="footer-links_div">
+          <h4><a href="./products.html">SHOP</a></h4>
+          <p><a href="./shirts.html">Shirts</a></p>
+          <p><a href="./pants.html">Pants</a></p>
+          <p><a href="./shoes.html">Shoes</a></p>
+        </div>
+
+        <div class="footer-links_div">
+          <h4>CUSTOMER SERVICE</h4>
+          <p>About Us</p>
+          <p>Privacy Policies</p>
+          <p>Contact</p>
+        </div>
+
+        <div class="footer-links_div">
+          <h4>Get in Touch</h4>
+          <p>Kathmandu, Nepal</p>
+          <p>+977-9761626067</p>
+          <p>rajinsakha07@gmail.com</p>
+        </div>
+
+        <div class="footer-payment_info">
+          <img src="./assets/pay.png" alt="payment" />
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2023 Impex Clothing Store. All rights reserved.</p>
+      </div>
+    </div>
+
+
+    <script src="customer.js"></script>
+      <script src="app.js"></script>
+    
+    </body>
+    </html>
+    

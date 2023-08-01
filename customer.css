@@ -1,0 +1,160 @@
+body{
+    background: #f5f5f5;
+}
+
+.profile{
+    display: flex;
+    padding: 2rem 4rem;
+}
+
+.profile-category{
+    background-color: #ececec;
+}
+
+.profile-category h4{
+    padding: 1rem;
+    margin: 1.5rem;
+    cursor:  pointer;
+    border: 1px solid black;
+}
+
+.welcome-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 4rem; */
+   
+}
+
+.welcome-header{
+    margin-bottom: 1rem;
+}
+
+.welcome-header h1{
+    text-align: center;
+}
+
+.sales-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+.sale-detail, .visitor-detail, .neworder-detail, .customer-detail{
+    display: flex;
+    padding: 1rem 1rem 1rem 0rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+
+.sales-section-content{
+    padding: 0rem 2rem 0rem 1rem;
+}
+
+.sales-section-image{
+    background-color: #d0d0d8;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.sales-section-image i{
+    font-size: 1.5rem;
+}
+
+#money{
+    color: green;
+}
+
+#customer{
+    color: blue;
+}
+
+#order{
+    color: red;
+}
+
+
+/* Recent Orders */
+.cart-image{
+    height: 100px;
+    width: 100px;
+}
+
+.cart-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+.noItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
+}
+
+.noItems h4, .purchase-items-container h4{
+    padding: 1rem;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.cart-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.cart-info{
+    padding: 2rem 6rem 4rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cart-items-container, .purchase-items-container{
+    border: 1px solid black;
+    flex: 1;
+    margin-right: 4rem;
+    min-width: 300px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+
+.cart-items-container h2, .purchase-items-container h2{
+    width: 100%;
+    font-size: 36px;
+    line-height: 48px;
+    padding: 0.5rem 2rem;
+    background-color: #ececec;
+}
+
+.cart-div{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart-title, .cart-price, .cart-image{
+    margin-right: 1rem;
+}
+
+
+#itemNum{
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
