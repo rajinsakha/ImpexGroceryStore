@@ -31,8 +31,12 @@
 
       <!-- Account Section -->
       <div class="navbar-account">
-        <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
-        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
+        <p>
+          <a href="./account.html"><i class="fa-solid fa-user"></i></a>
+        </p>
+        <p>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </p>
       </div>
 
       <!-- For responsive Navbar -->
@@ -55,44 +59,187 @@
 
         <div class="product-category-list">
           <h4 class="category-link active-link">ALL</h4>
-          <h4 class="category-link">SHIRTS</h4>
-          <h4 class="category-link">PANTS</h4>
-          <h4 class="category-link">SHOES</h4>
-          
+          <h4 class="category-link">SWEETS</h4>
+          <h4 class="category-link">FRUITS</h4>
+          <h4 class="category-link">SNACKS</h4>
         </div>
       </div>
 
-<!-- For Responsive product Category -->
-<i class="fa-solid fa-filter" id="open-category" onclick="openCategoryMenu()"></i>
+      <!-- For Responsive product Category -->
+      <i
+        class="fa-solid fa-filter"
+        id="open-category"
+        onclick="openCategoryMenu()"
+      ></i>
 
-        <div class="side-menu-category">
-          <h4 class="category-link active-link">ALL</h4>
-          <h4 class="category-link">SHIRTS</h4>
-          <h4 class="category-link">PANTS</h4>
-          <h4 class="category-link">SHOES</h4>
-          <i class="fa-solid fa-xmark" id="close-category" onclick="closeCategoryMenu()"></i>
-        </div>
-
-
+      <div class="side-menu-category">
+        <h4 class="category-link active-link">ALL</h4>
+        <h4 class="category-link">SWEETS</h4>
+        <h4 class="category-link">FRUITS</h4>
+        <h4 class="category-link">SNACKS</h4>
+        <i
+          class="fa-solid fa-xmark"
+          id="close-category"
+          onclick="closeCategoryMenu()"
+        ></i>
+      </div>
 
       <div class="explore-category">
-        <!-- All of our products are made with high-quality materials and are designed to be comfortable and durable. Shop now and find the perfect product for you! -->
-          <h2>EXPLORE PRODUCTS</h2>
-          
+        <h2>EXPLORE PRODUCTS</h2>
+
         <span
-          >Stay stylish with the wide selection of products available at Impex
-          Clothing Store.</span
+          >Discover delightful products that are sure to satisfy your cravings and elevate your culinary experience.</span
         >
 
         <!-- All Category -->
         <div class="explore-products active-tab" id="all">
-          <!-- First Product -->
+        <!-- First Product -->
+        <div class="product">
+          <div class="product-image">
+            <img
+              src="./assets/regular-pustakari.jpg"
+              alt="pustakari-sweet"
+            />
+          </div>
+          <div class="product-content">
+            <h3>SWEETS</h3>
+            <h4>Pustakari 1 Box</h4>
+            <!-- Rating Star Icons -->
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs 390</p>
+          </div>
+        </div>
+
+        <!-- Second Product -->
+        <div class="product">
+          <div class="product-image">
+            <img
+              src="./assets/watermelon.jpg"
+              alt="watermelon"
+             
+            />
+          </div>
+          <div class="product-content">
+            <h3>FRUITS</h3>
+            <h4>Watermelon 1Pcs</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Rs 260</p>
+          </div>
+        </div>
+
+        <!-- Third Product -->
+        <div class="product">
+          <div class="product-image">
+            <img
+              src="./assets/chocolate-cookies.jpg"
+              alt="chocolate-cookies"
+             
+            />
+          </div>
+          <div class="product-content">
+            <h3>SNACKS</h3>
+            <h4>Chocolate Cookies 1 Box</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+            </div>
+            <p>Rs 600</p>
+          </div>
+        </div>
+
+        <!-- Fourth Product -->
+        <div class="product">
+          <div class="product-image">
+            <img
+              src="./assets/regular-gundpak.jpeg"
+              alt="regular-gundpak"
+             
+            />
+          </div>
+          <div class="product-content">
+            <h3>SWEETS</h3>
+            <h4>Makkuse Gundpak 1 Jar</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+            </div>
+            <p>Rs 650</p>
+          </div>
+        </div>
+
+          <!-- Fifth Product -->
+          <div class="product">
+            <div class="product-image">
+              <img
+                src="./assets/mango.jpg"
+                alt="mango"
+              
+              />
+            </div>
+            <div class="product-content">
+              <h3>FRUITS</h3>
+              <h4>Mango 1Kg</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+              </div>
+              <p>Rs 200</p>
+            </div>
+          </div>
+
+            <!-- Sixth Product -->
+        <div class="product">
+          <div class="product-image">
+            <img
+              src="./assets/Doritos.jpg"
+              alt="doritos-chips"
+              
+            />
+          </div>
+          <div class="product-content">
+            <h3>SNACKS</h3>
+            <h4>Doritos Chips Pack of 4</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
+            </div>
+            <p>Rs 240</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- Sweets Category -->
+        <div class="explore-products" id="sweets">
           <div class="product-item">
-            <img src="./assets/f3.jpg" alt="" />
+            <img src="./assets/regular-pustakari.jpg" alt="pustakari" />
 
             <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Colorful Summer Shirt</h4>
+              <h3>SWEETS</h3>
+              <h4>Makuse Pustakari 1 Box</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -101,17 +248,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 1500</p>
+              <p>Rs 390</p>
             </div>
           </div>
 
-          <!-- Second Product -->
-          <div class="product-item">
-            <img src="./assets/greyjeans.jpg" alt="" />
+           <!-- Second -->
+           <div class="product-item">
+            <img src="./assets/dryfruits-sweets.jpg" alt="dry-fruits" />
 
             <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Grey Jeans Pant</h4>
+              <h3>SWEETS</h3>
+              <h4>Haldiram Dry Fruits 1 Box</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -120,17 +267,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 1800</p>
+              <p>Rs 350</p>
             </div>
           </div>
 
-          <!-- Third -->
+          <!--  Third Product -->
           <div class="product-item">
-            <img src="./assets/nike-jordan.jpg" alt="" />
+            <img src="./assets/regular-gundpak.jpeg" alt="regular-gundpak" />
 
             <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Air Jordan Grey</h4>
+              <h3>SWEETS</h3>
+              <h4>Regular Gundpak 1 Jar</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -139,17 +286,19 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 7500</p>
+              <p>Rs 650</p>
             </div>
           </div>
+
+         
 
           <!-- Fourth -->
           <div class="product-item">
-            <img src="./assets/BlueCottonPant.png" alt="blue-cotton-pant" />
+            <img src="./assets/almonds.jpg" alt="almonds" />
 
             <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Blue Cotton Pant</h4>
+              <h3>SWEETS</h3>
+              <h4>Jumbo Almonds 1 Box</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -158,16 +307,16 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 1500</p>
+              <p>Rs 750</p>
             </div>
           </div>
 
           <!-- Fifth -->
           <div class="product-item">
-            <img src="./assets/f1.jpg" alt="" />
+            <img src="./assets/rosewater-gundpak.jpg" alt="rosewater-gundpak" />
             <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Colorful Floral Shirt</h4>
+              <h3>SWEETS</h3>
+              <h4>Rosewater Gundpak 1 Jar</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -176,17 +325,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 1600</p>
+              <p>Rs 580</p>
             </div>
           </div>
 
           <!-- Sixth -->
           <div class="product-item">
-            <img src="./assets/jordan-yellow.jpg" alt="yellow-jordan" />
+            <img src="./assets/saon-papdi.jpg" alt="saon-papdi" />
 
             <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Air Jordan Yellow</h4>
+              <h3>SWEETS</h3>
+              <h4>Soan Papdi 1 Box</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -195,19 +344,21 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 6500</p>
+              <p>Rs 410</p>
             </div>
           </div>
         </div>
 
-        <!-- Shirt Category -->
-        <div class="explore-products" id="shirts">
+       
+
+        <!-- Fruits Category -->
+        <div class="explore-products" id="fruits">
           <div class="product-item">
-            <img src="./assets/f1.jpg" alt="" />
+            <img src="./assets/apple.jpg" alt="apple" />
 
             <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Floral Shirt</h4>
+              <h3>FRUITS</h3>
+              <h4>Apple Fuji 1 KG</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -216,17 +367,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 2500</p>
+              <p>Rs 350</p>
             </div>
           </div>
 
           <!-- Second Product -->
           <div class="product-item">
-            <img src="./assets/f2.jpg" alt="" />
+            <img src="./assets/mango.jpg" alt="mango" />
 
             <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Nike Flight Edition</h4>
+              <h3>FRUITS</h3>
+              <h4>Mango 1 KG</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -235,247 +386,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 2500</p>
+              <p>Rs 200</p>
             </div>
           </div>
 
           <!-- Third -->
           <div class="product-item">
-            <img src="./assets/f3.jpg" alt="" />
+            <img src="./assets/watermelon.jpg" alt="watermelon" />
 
             <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Flight Editionr</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Fourth -->
-          <div class="product-item">
-            <img src="./assets/f4.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Nike Flight Edition</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Fifth -->
-          <div class="product-item">
-            <img src="./assets/f5.jpg" alt="" />
-            <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Nike</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Sixth -->
-          <div class="product-item">
-            <img src="./assets/f6.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>SHIRTS</h3>
-              <h4>Nike</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- PANTS Category -->
-        <div class="explore-products" id="pants">
-          <div class="product-item">
-            <img src="./assets/KhakiStretchable.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Khaki Stretchable</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Second Product -->
-          <div class="product-item">
-            <img src="./assets/BlueCottonPant.png" alt="" />
-
-            <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Blue Stretchable Pant</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Third -->
-          <div class="product-item">
-            <img src="./assets/greyjeans.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Grey Jeans Pant</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Fourth -->
-          <div class="product-item">
-            <img src="./assets/lightgreycotton.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Light Grey Cotton Pant</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Fifth -->
-          <div class="product-item">
-            <img src="./assets/Bluejeans.jpg" alt="blue-jeans-pant" />
-            <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Blue Jeans Pant</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-
-          <!-- Sixth -->
-          <div class="product-item">
-            <img src="./assets/greyjoggers.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>PANTS</h3>
-              <h4>Grey Joggers</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 2500</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Shoes Category -->
-        <div class="explore-products" id="shoes">
-          <div class="product-item">
-            <img src="./assets/white-sport-shoe.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>White Sports Shoes</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 5500</p>
-            </div>
-          </div>
-
-          <!-- Second Product -->
-          <div class="product-item">
-            <img src="./assets/jordan-low.jpg" alt="" />
-
-            <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Jordan Low</h4>
-              <!-- Rating Star Icons -->
-              <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <p>Rs 6000</p>
-            </div>
-          </div>
-
-          <!-- Third -->
-          <div class="product-item">
-            <img src="./assets/whiteshoes.jpg" alt="white-sneaker" />
-
-            <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>White Sneaker</h4>
+              <h3>FRUITS</h3>
+              <h4>Watermelon 1 PCS</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -484,17 +405,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
               </div>
-              <p>Rs 2500</p>
+              <p>Rs 320</p>
             </div>
           </div>
 
           <!-- Fourth -->
           <div class="product-item">
-            <img src="./assets/nike-jordan.jpg" alt="grey-jordan" />
+            <img src="./assets/pineapple.jpg" alt="pineapple" />
 
             <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Air Jordan Grey</h4>
+              <h3>FRUITS</h3>
+              <h4>Pineapple 1Pcs</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -503,16 +424,16 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 7500</p>
+              <p>Rs 190</p>
             </div>
           </div>
 
           <!-- Fifth -->
           <div class="product-item">
-            <img src="./assets/j1.png" alt="jordan-skyblue" />
+            <img src="./assets/orange.jpg" alt="orange" />
             <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Air Jordan SkyBlue</h4>
+              <h3>FRUITS</h3>
+              <h4>Orange 1Kg</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -521,17 +442,17 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star-half-stroke"></i>
               </div>
-              <p>Rs 7000</p>
+              <p>Rs 180</p>
             </div>
           </div>
 
           <!-- Sixth -->
           <div class="product-item">
-            <img src="./assets/j2.png" alt="jordan-green" />
+            <img src="./assets/papaya.jpg" alt="papaya" />
 
             <div class="product-description">
-              <h3>SHOES</h3>
-              <h4>Nike Air Jordan Green</h4>
+              <h3>FRUITS</h3>
+              <h4>Papaya 1Pcs</h4>
               <!-- Rating Star Icons -->
               <div class="rating">
                 <i class="fa-solid fa-star"></i>
@@ -540,15 +461,130 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star" style="color: #d9d9d9"></i>
               </div>
-              <p>Rs 7000</p>
+              <p>Rs 280</p>
+            </div>
+          </div>
+        </div>
+
+         <!-- SnackS Category -->
+         <div class="explore-products" id="snacks">
+          <div class="product-item">
+            <img src="./assets/oatmeal-cookies.jpg" alt="oatmeal-cookies" />
+
+            <div class="product-description">
+              <h3>SNACKS</h3>
+              <h4>Oatmeal Cookies 1 Box</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 600</p>
+            </div>
+          </div>
+
+          <!-- Second Product -->
+          <div class="product-item">
+            <img src="./assets/Doritos.jpg" alt="dorito-chips" />
+
+            <div class="product-description">
+              <h3>SNACKS</h3>
+              <h4>Doritos Chips Pack of 4</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 240</p>
+            </div>
+          </div>
+
+          <!-- Third -->
+          <div class="product-item">
+            <img src="./assets/chocolate-cookies.jpg" alt="chocolate-cookies" />
+
+            <div class="product-description">
+              <h3>SNACKS</h3>
+              <h4>Chocolate Cookies 1 Box</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 600</p>
+            </div>
+          </div>
+
+          <!-- Fourth -->
+          <div class="product-item">
+            <img src="./assets/semolina-cookies.jpg" alt="semolina-cookies" />
+
+            <div class="product-description">
+              <h3>SNACKS</h3>
+              <h4>Semolina Cookies 1 Box</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 600</p>
+            </div>
+          </div>
+
+          <!-- Fifth -->
+          <div class="product-item">
+            <img src="./assets/bhujia.png" alt="bhujia" />
+            <div class="product-description">
+              <h3>SNACKS</h3>
+              <h4>Alu Bhujia 1 Packet</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 150</p>
+            </div>
+          </div>
+
+          <!-- Sixth -->
+          <div class="product-item">
+            <img src="./assets/cheetos.jpg" alt="cheetos" />
+
+            <div class="product-description">
+              <h3>SNACKS</h3>
+              <h4>Cheetos Chips 1 Packet</h4>
+              <!-- Rating Star Icons -->
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>Rs 50</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="footer section-padding">
+     <!-- Footer Section -->
+     <div class="footer section-padding">
       <div class="footer-links">
         <div class="footer-links_logo">
           <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
@@ -556,9 +592,9 @@
         </div>
         <div class="footer-links_div">
           <h4><a href="./products.html">SHOP</a></h4>
-          <p><a href="./shirts.html">Shirts</a></p>
-          <p><a href="./pants.html">Pants</a></p>
-          <p><a href="./shoes.html">Shoes</a></p>
+          <p><a href="./products.html">Sweets</a></p>
+          <p><a href="./products.html">Fruits</a></p>
+          <p><a href="./products.html">Snacks</a></p>
         </div>
 
         <div class="footer-links_div">
@@ -580,7 +616,7 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <p>&copy; 2023 Impex Clothing Store. All rights reserved.</p>
+        <p>&copy; 2023 Impex Grocery Store. All rights reserved.</p>
       </div>
     </div>
 

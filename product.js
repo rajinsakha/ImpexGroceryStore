@@ -25,14 +25,10 @@ addToCartButton.addEventListener('click', () => {
     amount: amount
   };
 
-  // for(let i = 1; i<=index;i++){
     data.push(productData);
     localStorage.setItem(`cartProductData`, JSON.stringify(data));
     index++;
-  // }
 
-
-  // localStorage.setItem('cartProductData', JSON.stringify(productData));
 
 
 });

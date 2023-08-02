@@ -117,6 +117,7 @@ body{
     padding: 2rem 6rem 4rem 6rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
