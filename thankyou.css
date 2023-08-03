@@ -1,6 +1,7 @@
 .thank-section{
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
 
 .thank-section-image{
