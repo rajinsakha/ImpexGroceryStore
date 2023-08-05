@@ -1,139 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CheckOut</title>
-  <link rel="stylesheet" href="style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-<link rel="stylesheet" href="checkout.css">
-
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="checkout.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 <body>
-   <!-- Navbar Section -->
-   <div class="navbar">
-    <!-- Logo -->
-    <div class="navbar-logo">
-      <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
-    </div>
 
-    <!-- Links -->
-    <div class="navbar-links">
-      <p><a href="./index.html">Home</a></p>
-      <p><a href="./products.html">Products</a></p>
-      <p><a href="http://">About</a></p>
-      <p><a href="http://">Contact</a></p>
-    </div>
-
-    <!-- Account Section -->
-    <div class="navbar-account">
-      <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
-      <p ><a href="./cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></p>
-    </div>
-
-    <!-- For responsive Navbar -->
-
-    <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
-
-    <div class="side-menu">
-      <p><a href="./index.html" class="active">Home</a></p>
-      <p><a href="./products.html">Products</a></p>
-      <p><a href="http://">About</a></p>
-      <p><a href="http://">Contact</a></p>
-      <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
-    </div>
-  </div>
-
-
-<!-- Cart Section -->
-
-
-<!-- No Items -->
-  <div class="cart-section-header">
-    <h1>Shopping Cart</h1>
-  </div>
-
-
-  <div class="cart-info">
-    <!-- Items Info Table -->
-    <div class="cart-items-container">
-      <h2>Items</h2>
-    </div>
-
-    <!-- Payment Info Table -->
-    <div class="order-info">
-      <div class="order-title">
-        <h2>Payment Info</h2>
+     <!-- Navbar Section -->
+     <div class="navbar">
+        <!-- Logo -->
+        <div class="navbar-logo">
+          <a href="./index.html"><img src="./assets/IB.png" alt="logo" /></a>
+        </div>
+  
+        <!-- Links -->
+        <div class="navbar-links">
+          <p><a href="#">Home</a></p>
+          <p><a href="./products.html">Products</a></p>
+          <p><a href="./about.html">About</a></p>
+          <p><a href="./contact.html">Contact</a></p>
+        </div>
+  
+        <!-- Account Section -->
+        <div class="navbar-account">
+          <p>
+            <a href="./account.html" class="active"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+          </p>
+          <p>
+            <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </p>
+        </div>
+  
+        <!-- For responsive Navbar -->
+  
+        <i class="fa-solid fa-bars" id="open-btn" onclick="openMenu()"></i>
+  
+        <div class="side-menu">
+          <p><a href="./index.html" class="active">Home</a></p>
+          <p><a href="./products.html">Products</a></p>
+          <p><a href="./about.html">About</a></p>
+          <p><a href="./contact.html">Contact</a></p>
+          <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
+        </div>
       </div>
 
-      <div class="payment-info">
-        <h3>Payment Method</h3>
-        <input type="radio" name="payment-method" value="card" id="">
-        <label for="card">Debit Card</label><br>
-        <input type="radio" name="payment-method" value="esewa" id="">
-        <label for="esewa">E-sewa</label><br>
-      </div>
-      
-      <div class="total-items-info">
-        <h3>Order Summary</h3>
-        <p id="itemNum"></p>
-        <p id="totalPrice"></p>
-      </div>
 
-      <div class="place-order">
-      <a href="./thankyou.html">Check Out</a>
-      </div>
-
+<!-- Proceed to CheckOut Section -->
+    <div class="container">
+        <h2>Checkout Details</h2>
+        <form class="form-container" id="checkout-form">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="zip" placeholder="ZIP/Postal Code" required>
+            <select name="country" required>
+                <option value="">Select Country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="nepal">Nepal</option>
+            </select>
+            <button type="submit">Proceed to Payment</button>
+        </div>
+        </form>
     </div>
 
-  </div>
-</div>
-
- <!-- Footer Section -->
+     <!-- Footer Section -->
  <div class="footer section-padding">
-  <div class="footer-links">
-    <div class="footer-links_logo">
-      <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
-      <p>Kathmandu, Nepal, All Rights Reserved</p>
+    <div class="footer-links">
+      <div class="footer-links_logo">
+        <a href="#"><img src="./assets/IB.png" alt="logo" /></a>
+        <p>Kathmandu, Nepal, All Rights Reserved</p>
+      </div>
+      <div class="footer-links_div">
+        <h4><a href="./products.html">SHOP</a></h4>
+        <p><a href="./products.html">Sweets</a></p>
+        <p><a href="./products.html">Fruits</a></p>
+        <p><a href="./products.html">Snacks</a></p>
+      </div>
+  
+      <div class="footer-links_div">
+        <h4>CUSTOMER SERVICE</h4>
+        <p>About Us</p>
+        <p>Privacy Policies</p>
+        <p>Contact</p>
+      </div>
+  
+      <div class="footer-links_div">
+        <h4>Get in Touch</h4>
+        <p>Kathmandu, Nepal</p>
+        <p>+977-9761626067</p>
+        <p>rajinsakha07@gmail.com</p>
+      </div>
+  
+      <div class="footer-payment_info">
+        <img src="./assets/pay.png" alt="payment" />
+      </div>
     </div>
-    <div class="footer-links_div">
-      <h4><a href="./products.html">SHOP</a></h4>
-      <p><a href="./products.html">Sweets</a></p>
-      <p><a href="./products.html">Fruits</a></p>
-      <p><a href="./products.html">Snacks</a></p>
-    </div>
-
-    <div class="footer-links_div">
-      <h4>CUSTOMER SERVICE</h4>
-      <p>About Us</p>
-      <p>Privacy Policies</p>
-      <p>Contact</p>
-    </div>
-
-    <div class="footer-links_div">
-      <h4>Get in Touch</h4>
-      <p>Kathmandu, Nepal</p>
-      <p>+977-9761626067</p>
-      <p>rajinsakha07@gmail.com</p>
-    </div>
-
-    <div class="footer-payment_info">
-      <img src="./assets/pay.png" alt="payment" />
+    <div class="footer-copyright">
+      <p>&copy; 2023 Impex Grocery Store. All rights reserved.</p>
     </div>
   </div>
-  <div class="footer-copyright">
-    <p>&copy; 2023 Impex Grocery Store. All rights reserved.</p>
-  </div>
-</div>
+    
+  
    
- 
-  <script src="checkout.js"></script>
-  <script src="app.js"></script>
+
+
+    <script>
+        function showPopup() {
+            alert("Thank you for your order!");
+            const form = document.getElementById("checkout-form");
+            form.reset(); // Reset the form after showing the popup
+        }
+
+        const form = document.getElementById("checkout-form");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            showPopup(); 
+        });
+    </script>
 </body>
 </html>
+
+

@@ -13,7 +13,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  sideMenu.style.left = "-300px";
+  sideMenu.style.left = "-250px";
 }
 
 // For Category Menu
@@ -22,7 +22,7 @@ function openCategoryMenu() {
 }
 
 function closeCategoryMenu() {
-  sideCategoryMenu.style.right = "-300px";
+  sideCategoryMenu.style.right = "-250px";
 }
 
 // For product page to display each category

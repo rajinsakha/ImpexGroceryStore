@@ -1112,8 +1112,8 @@ a {
     background-color:#eee;
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -250px;
+    width: 250px;
     height: 100vh;
     padding-top: 4rem;
   }
@@ -1146,8 +1146,8 @@ a {
     background-color: #e9eaec;
     position: fixed;
     top: 80px;
-    right: -300px;
-    width: 300px;
+    right: -250px;
+    width: 250px;
     height: 45vh;
     padding-top: 4rem;
   }

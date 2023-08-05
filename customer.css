@@ -73,12 +73,12 @@
 .sale-detail, .visitor-detail, .neworder-detail, .customer-detail{
     display: flex;
     padding: 1rem 1rem 1rem 0rem;
-    border: 1px solid black;
     border-radius: 6px;
     align-items: center;
     margin-bottom: 1rem;
     background: #fff;
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 12px -2px rgba(0, 0, 0, 0.1),
+    0 18px 36px -6px rgba(0, 0, 0, 0.1);
 }
 
 .sales-section-content{
@@ -150,15 +150,15 @@
 }
 
 .cart-items-container, .purchase-items-container{
-    /* border: 1px solid black; */
-    min-width: 300px;
     margin-bottom: 1rem;
-    
+    flex: 1;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 12px -2px rgba(0, 0, 0, 0.1),
+    0 18px 36px -6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
 .purchase-items-container{
     margin-left: 4rem;
-    flex: 1;
 }
 
 
@@ -169,7 +169,7 @@
     text-align: center;
     font-weight: 600;
     /* padding: 0.5rem 2rem; */
-    background-color: #ececec;
+    /* background-color: #ececec; */
 }
 
 .cart-div{
@@ -218,7 +218,7 @@ table {
     font-size: 2em;
     font-weight: 600;
     margin: .5em 0 .75em;
-    background-color: #ececec;
+    /* background-color: #ececec; */
   }
   
   table tr {
@@ -262,6 +262,10 @@ table {
         font-size: 1.2rem;
         margin-right: 0.6rem;
     }
+
+    .cart-info{
+        flex-direction: column;
+    }
     
   }
 
@@ -273,7 +277,6 @@ table {
     /* Bottom menu */
 .bottom-menu{
     display: flex;
-    /* overflow: hidden; */
     background-color: #333;
     color: #fff;
      position: fixed;
@@ -286,7 +289,7 @@ table {
        align-items: center;
        justify-content: center;
        flex: 1;
-       padding: 1rem 2rem;
+       padding: 1rem;
    }
 
    .bottom-menu-item:hover{
@@ -311,7 +314,7 @@ table {
   @media screen and (max-width: 600px) {
     .bottom-menu-item{
         flex-direction: column;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 1rem;
 
     }
 
@@ -325,13 +328,26 @@ table {
 
 
   @media screen and (max-width: 500px) {
-
+   
     .welcome-section{
         padding: 2rem;
     }
 
     .bottom-menu-item{
-        padding: 0.5rem 1rem;
+        padding: 0.5rem;
+    }
+
+    .bottom-menu-item p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .cart-info{
+        padding: 2rem 0rem;
+    }
+
+    .cart-items-container, .purchase-items-container{
+        padding: 0rem;
     }
 
 
