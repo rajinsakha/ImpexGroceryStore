@@ -68,21 +68,20 @@
 
 #visa:checked ~ .category .visaMethod,
 #mastercard:checked ~ .category .mastercardMethod,
-#paypal:checked ~ .category .paypalMethod,
-#AMEX:checked ~ .category .amexMethod {
+#esewa:checked ~ .category .esewaMethod,
+#cod:checked ~ .category .codMethod {
   box-shadow: 0px 0px 0px 1px #6064b6;
 }
 
 #visa:checked ~ .category .visaMethod .check,
 #mastercard:checked ~ .category .mastercardMethod .check,
-#paypal:checked ~ .category .paypalMethod .check,
-#AMEX:checked ~ .category .amexMethod .check {
+#esewa:checked ~ .category .esewaMethod .check,
+#cod:checked ~ .category .codMethod .check {
   display: block;
 }
 
 label .imgName {
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -91,11 +90,10 @@ label .imgName {
 }
 
 .imgName span {
-  font-family: Arial, Helvetica, sans-serif;
-
   position: absolute;
   top: 72%;
   transform: translateY(-72%);
+  text-align: center;
 }
 
 .imgName .imgContainer {
@@ -121,12 +119,12 @@ img {
   width: 65px;
 }
 
-.paypal img {
-  width: 80px;
+.esewa img {
+  width: 50px;
 }
 
-.AMEX img {
-  width: 50px;
+.cod img {
+  width: 60px;
 }
 
 .check {

@@ -5,7 +5,7 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-height: 500px;
+  min-height: 450px;
 }
 
 .container h2 {
@@ -48,7 +48,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .form-container button:hover {

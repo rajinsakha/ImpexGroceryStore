@@ -13,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
- 
   </head>
   <body>
     <!-- Navbar Section -->
@@ -25,7 +24,7 @@
 
       <!-- Links -->
       <div class="navbar-links">
-        <p><a href="#" >Home</a></p>
+        <p><a href="./index.html">Home</a></p>
         <p><a href="./products.html">Products</a></p>
         <p><a href="./about.html">About</a></p>
         <p><a href="./contact.html">Contact</a></p>
@@ -33,8 +32,14 @@
 
       <!-- Account Section -->
       <div class="navbar-account">
-        <p><a href="./account.html" class="active"><i class="fa-solid fa-user"></i></a></p>
-        <p><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
+        <p>
+          <a href="./account.html" class="active"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </p>
+        <p>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </p>
       </div>
 
       <!-- For responsive Navbar -->
@@ -52,9 +57,8 @@
 
     <!--Logged in Customer's Profile Zone -->
     <div class="profile">
-      
-       <!-- Side Menu -->
-       <div class="profile-category">
+      <!-- Side Menu -->
+      <div class="profile-category">
         <div class="profile-sidemenu">
           <div class="profile-sidemenu-item active-sidemenu">
             <p><i class="fa-solid fa-table-cells-large"></i>Dashboard</p>
@@ -75,7 +79,6 @@
       </div>
 
       <div class="welcome-section">
-
         <div class="welcome-header">
           <h1>Welcome Rajin Sakha</h1>
         </div>
@@ -87,10 +90,10 @@
               <p>Rs 1000</p>
               <span>37% Last Week</span>
             </div>
-             
-              <div class="sales-section-image">
-                <i class="fa-solid fa-money-bill" id="money"></i>
-              </div>
+
+            <div class="sales-section-image">
+              <i class="fa-solid fa-money-bill" id="money"></i>
+            </div>
           </div>
 
           <div class="visitor-detail">
@@ -99,7 +102,6 @@
               <p>6547</p>
               <span>27% Last Week</span>
             </div>
-           
 
             <div class="sales-section-image">
               <i class="fa-solid fa-people-group" id="visitors"></i>
@@ -109,14 +111,13 @@
           <div class="neworder-detail">
             <div class="sales-section-content">
               <h3>New Orders</h3>
-            <p>1523</p>
-            <span>17% Last Week</span>
+              <p>1523</p>
+              <span>17% Last Week</span>
             </div>
 
             <div class="sales-section-image">
               <i class="fa-solid fa-boxes-stacked" id="order"></i>
             </div>
-
           </div>
 
           <div class="customer-detail">
@@ -129,81 +130,68 @@
             <div class="sales-section-image">
               <i class="fa-solid fa-user-group" id="customers"></i>
             </div>
-         
           </div>
         </div>
-      
 
         <!-- Recent Order List -->
-       <!-- Recent Order List -->
-       <div class="order-list">
-        <div class="cart-info">
-          <!-- Items Info Table -->
-          <div class="cart-items-container">
-            <h3>Order Management</h3>
+        <!-- Recent Order List -->
+        <div class="order-list">
+          <div class="cart-info">
+            <!-- Items Info Table -->
+            <div class="cart-items-container">
+              <h3>Order Management</h3>
 
-            <div class="noItems">
-              <h4>No Recent Orders Found.</h4>
+              <div class="noItems">
+                <h4>No Recent Orders Found.</h4>
+              </div>
             </div>
-          </div>
 
-          <div class="purchase-items-container">
-            <div class="emptyPurchaseItems">
-              <h2>Purchase History</h2>
-              <h4>No Purchase History Found.</h4>
+            <div class="purchase-items-container">
+              <div class="emptyPurchaseItems">
+                <h2>Purchase History</h2>
+                <h4>No Purchase History Found.</h4>
+              </div>
+
+              <table id="purchase-table">
+                <caption>
+                  Purchase History
+                </caption>
+
+                <tr>
+                  <th>Product ID</th>
+                  <th>Product Name</th>
+                  <th>Product Price</th>
+                </tr>
+              </table>
             </div>
-         
-
-            <table id="purchase-table">
-              <caption>
-                Purchase History
-              </caption>
-
-              <tr>
-                <th>Product ID</th>
-                <th>Product Name</th>
-                <th>Product Price</th>
-              </tr>
-            </table>
           </div>
         </div>
       </div>
-
-   
-
-        </div>
-
-
-
-      </div>
-
-
     </div>
 
-        <!-- Bottom Menu -->
-        <div class="bottom-menu">
-          <div class="bottom-menu-item active-bottom">
-            <i class="fa-solid fa-table-cells-large"></i>
-            <p>Dashboard</p>
-          </div>
-          <div class="bottom-menu-item">
-            <i class="fa-solid fa-rectangle-list"></i>
-            <p>Orders</p>
-          </div>
-          <div class="bottom-menu-item">
-            <i class="fa-solid fa-money-check"></i>
-            <p>History</p>
-          </div>
-          <div class="bottom-menu-item">
-            <i class="fa-solid fa-file"></i>
-            <p>Reports</p>
-          </div>
-          <div class="bottom-menu-item">
-            <i class="fa-solid fa-gear"></i>
-            <p>Setting</p>
-          </div>
-        </div>
-
+    <!-- Bottom Menu -->
+    <div class="bottom-menu">
+      <div class="bottom-menu-item active-bottom">
+        <i class="fa-solid fa-table-cells-large"></i>
+        <p>Dashboard</p>
+      </div>
+      <div class="bottom-menu-item">
+        <i class="fa-solid fa-rectangle-list"></i>
+        <p>Orders</p>
+      </div>
+      <div class="bottom-menu-item">
+        <i class="fa-solid fa-money-check"></i>
+        <p>History</p>
+      </div>
+      <div class="bottom-menu-item">
+        <i class="fa-solid fa-file"></i>
+        <p>Reports</p>
+      </div>
+      <div class="bottom-menu-item">
+        <i class="fa-solid fa-gear"></i>
+        <p>Setting</p>
+      </div>
+    </div>
 
     <!-- Footer Section -->
     <div class="footer section-padding">
@@ -243,8 +231,6 @@
     </div>
 
     <script src="customer.js"></script>
-      <script src="app.js"></script>
-    
-    </body>
-    </html>
-    
+    <script src="app.js"></script>
+  </body>
+</html>

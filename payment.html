@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment</title>
+  <title>Payment | Impex Grocery Store</title>
   <link rel="stylesheet" href="style.css">
   <link
   rel="stylesheet"
@@ -27,14 +27,14 @@
     <div class="navbar-links">
       <p><a href="./index.html">Home</a></p>
       <p><a href="./products.html">Products</a></p>
-      <p><a href="http://">About</a></p>
-      <p><a href="http://">Contact</a></p>
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./contact.html">Contact</a></p>
     </div>
 
     <!-- Account Section -->
     <div class="navbar-account">
       <p><a href="./account.html"><i class="fa-solid fa-user"></i></a></p>
-      <p ><a href="./cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></p>
+      <p ><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
     </div>
 
     <!-- For responsive Navbar -->
@@ -44,8 +44,8 @@
     <div class="side-menu">
       <p><a href="./index.html" class="active">Home</a></p>
       <p><a href="./products.html">Products</a></p>
-      <p><a href="http://">About</a></p>
-      <p><a href="http://">Contact</a></p>
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./contact.html">Contact</a></p>
       <i class="fa-solid fa-xmark" id="close-btn" onclick="closeMenu()"></i>
     </div>
   </div>
@@ -70,15 +70,15 @@
         <form action="#">
             <input type="radio" name="payment" id="visa">
             <input type="radio" name="payment" id="mastercard">
-            <input type="radio" name="payment" id="paypal">
-            <input type="radio" name="payment" id="AMEX">
+            <input type="radio" name="payment" id="esewa">
+            <input type="radio" name="payment" id="cod">
 
 
             <div class="category">
                 <label for="visa" class="visaMethod">
                     <div class="imgName">
                         <div class="imgContainer visa">
-                            <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
+                            <img src="./assets/visa.png" alt="visa">
                         </div>
                         <span class="name">VISA</span>
                     </div>
@@ -88,29 +88,29 @@
                 <label for="mastercard" class="mastercardMethod">
                     <div class="imgName">
                         <div class="imgContainer mastercard">
-                            <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
+                            <img src="./assets/mastercard.png" alt="mastercard">
                         </div>
                         <span class="name">Mastercard</span>
                     </div>
                     <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
                 </label>
 
-                <label for="paypal" class="paypalMethod">
+                <label for="esewa" class="esewaMethod">
                     <div class="imgName">
-                        <div class="imgContainer paypal">
-                            <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="">
+                        <div class="imgContainer esewa">
+                            <img src="./assets/esewa.png" alt="e-sewa">
                         </div>
-                        <span class="name">Paypal</span>
+                        <span class="name">E-sewa</span>
                     </div>
                     <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
                 </label>
 
-                <label for="AMEX" class="amexMethod">
+                <label for="cod" class="codMethod">
                     <div class="imgName">
-                        <div class="imgContainer AMEX">
-                            <img src="https://i.ibb.co/wQnrX86/American-Express.jpg" alt="">
+                        <div class="imgContainer cod">
+                            <img src="./assets/cod.png" alt="cash-on-delivery">
                         </div>
-                        <span class="name">AMEX</span>
+                        <span class="name">Cash on Delivery</span>
                     </div>
                     <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
                 </label>
