@@ -19,12 +19,26 @@
   justify-content: space-between;
 }
 .form-container input {
-  width: 48%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+
+.form-field {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-error {
+  color: red;
+  font-size: 12px;
+}
+
 
 .form-container select {
   width: 100%;
@@ -53,4 +67,12 @@
 
 .form-container button:hover {
   background-color: #45a049;
+}
+
+.gender{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }

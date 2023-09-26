@@ -1,0 +1,242 @@
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  min-height: 100vh;
+}
+
+.payment-title {
+  margin-bottom: 1.5rem;
+  padding: 0rem 4rem;
+}
+
+.payment-title h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+  gap: 4rem;
+}
+
+/* Payment Section */
+.container {
+  flex: 1;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 12px -2px rgba(0, 0, 0, 0.1),
+    0 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+
+.container .title {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container form {
+  width: 100%;
+}
+.container form input[type="radio"] {
+  display: none;
+}
+
+.container form .category {
+  margin-top: 10px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.category label {
+  height: 145px;
+  padding: 20px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+#visa:checked ~ .category .visaMethod,
+#mastercard:checked ~ .category .mastercardMethod,
+#esewa:checked ~ .category .esewaMethod,
+#cod:checked ~ .category .codMethod {
+  box-shadow: 0px 0px 0px 1px #6064b6;
+}
+
+#visa:checked ~ .category .visaMethod .check,
+#mastercard:checked ~ .category .mastercardMethod .check,
+#esewa:checked ~ .category .esewaMethod .check,
+#cod:checked ~ .category .codMethod .check {
+  display: block;
+}
+
+label .imgName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgName span {
+  position: absolute;
+  top: 72%;
+  transform: translateY(-72%);
+  text-align: center;
+}
+
+.imgName .imgContainer {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.visa img {
+  width: 80px;
+}
+
+.mastercard img {
+  width: 65px;
+}
+
+.esewa img {
+  width: 50px;
+}
+
+.cod img {
+  width: 60px;
+}
+
+.check {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+.check i {
+  font-size: 18px;
+}
+
+/* Order Info Section */
+.order-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 12px -2px rgba(0, 0, 0, 0.1),
+    0 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+
+#itemNum {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.order-title h2 {
+  font-size: 2rem;
+}
+
+.place-order {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.order-button {
+  display: block;
+  margin-top: 1rem;
+  background-color: #f47c1c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+
+.place-order a:hover {
+  background-color: #ff9036;
+}
+
+@media screen and (max-width: 1200px) {
+    .payment-info {
+        padding: 0rem;
+        flex-direction: column;
+      }    
+}
+
+@media screen and (max-width: 1000px) {
+  .order-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .order-info {
+    flex: 1;
+  }
+
+  .payment-title {
+    padding: 0rem;
+    text-align: center;
+  }
+
+  .place-order {
+    margin-top: 2rem;
+   
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container form .category {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .payment-title h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container form .category {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .category label {
+    height: 80px;
+  }
+
+  .imgName .imgContainer {
+    top: 30%;
+    transform: translateY(-30%);
+  }
+
+  .imgName span {
+    top: 90%;
+    transform: translateY(-90%);
+  }
+}

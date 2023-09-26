@@ -21,6 +21,10 @@ a {
   margin: 4rem 6rem;
 }
 
+.hide{
+  display: none;
+}
+
 /* Navbar Section */
 
 .navbar {
@@ -67,11 +71,11 @@ a {
   border-bottom: 3px solid transparent;
 }
 
-.navbar-links a:hover, .navbar-account a:hover, .side-menu a:hover  {
+.navbar-links a:hover, .navbar-account a:hover  {
   border-bottom: 3px solid red;
 }
 
-.navbar-links a.active, .navbar-account a.active, .side-menu a.active {
+.navbar-links a.active, .navbar-account a.active {
   border-bottom: 3px solid red;
 }
 
@@ -195,7 +199,6 @@ a {
 .product-list {
   flex: 1;
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
 }
@@ -1011,7 +1014,7 @@ a {
 
 #contact-us input{
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   height: 40px;
   padding: 1rem;
   border: none;
@@ -1033,7 +1036,7 @@ a {
 .message-form form button{
   width: 150px;
   padding: 0.5rem 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
@@ -1092,6 +1095,14 @@ a {
   font-size: 1.1rem;
 }
 
+.name-error, .email-error, .message-error, .contact-error, .password-error, .cpassword-error{
+  color:red;
+  margin-bottom: 0.8rem;
+}
+
+
+
+
 
 /* Responsive */
 @media screen and (max-width: 1050px) {
@@ -1108,22 +1119,30 @@ a {
 
   .side-menu {
     display: block;
-    background-color:#eee;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
     position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
     height: 100vh;
     padding-top: 4rem;
+    transition: width 0.3s ease;
   }
 
   .side-menu p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.8rem;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin: 12px;
+    padding: 12px;
+  }
+
+  .side-menu a.active, .side-menu a:hover{
+    color: orangered;
   }
 
   #close-btn {
@@ -1142,12 +1161,12 @@ a {
 
   .side-menu-category {
     display: block;
-    background-color: #e9eaec;
+    background-color: #f3f3f3;
     position: fixed;
     top: 80px;
     right: -250px;
     width: 250px;
-    height: 45vh;
+    height: 40vh;
     padding-top: 4rem;
   }
 
@@ -1159,6 +1178,10 @@ a {
     font-weight: 700;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+
+  .hide-logout{
+    display: none;
   }
 
   #close-category {
